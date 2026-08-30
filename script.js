@@ -288,7 +288,7 @@
       clearErrors();
       syncPhoneRequirement();
       setStatus(
-        "Thanks—your project details were sent successfully. Sidhu Builds will respond within two business days.",
+        "Thanks—your project details have been sent. We’ll review them and respond within one business day.",
         "is-ready",
       );
       focusStatus();
