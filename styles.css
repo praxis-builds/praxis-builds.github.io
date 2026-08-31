@@ -1020,3 +1020,97 @@ footer p {
     scroll-behavior: auto;
   }
 }
+
+
+.leadflow-visual {
+  position: relative;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background:
+    radial-gradient(circle at 84% 18%, rgba(92, 190, 255, 0.35), transparent 30%),
+    linear-gradient(145deg, #0e2337 0%, #07131f 62%, #051019 100%);
+}
+.leadflow-window {
+  width: min(94%, 560px);
+  overflow: hidden;
+  border: 1px solid rgba(154, 209, 240, 0.28);
+  border-radius: 14px;
+  background: #0b1b2a;
+  color: #eaf5fc;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.44);
+  transform: rotate(1.5deg);
+}
+.leadflow-topbar {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0 0.85rem;
+  border-bottom: 1px solid rgba(154, 209, 240, 0.14);
+  color: #c6e8ff;
+  font-size: 0.55rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+.leadflow-mark {
+  display: grid;
+  width: 22px;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 6px;
+  background: #53b9f4;
+  color: #07131f;
+  font-size: 0.47rem;
+}
+.leadflow-topbar > i {
+  width: 8px;
+  height: 8px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: #93df73;
+}
+.leadflow-dashboard { display: grid; grid-template-columns: 0.28fr 1fr; min-height: 340px; }
+.leadflow-dashboard aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.1rem 0.65rem;
+  border-right: 1px solid rgba(154, 209, 240, 0.12);
+  color: #7894a8;
+  font-size: 0.43rem;
+  font-weight: 700;
+}
+.leadflow-dashboard aside b { color: #b2d9f1; font-size: 0.42rem; letter-spacing: 0.12em; }
+.leadflow-dashboard aside .is-active { color: #07131f; background: #53b9f4; padding: 0.38rem; border-radius: 4px; }
+.leadflow-content { padding: 1.45rem; }
+.leadflow-content > small { color: #75bde8; font-size: 0.45rem; font-weight: 900; letter-spacing: 0.14em; }
+.leadflow-content > strong { display: block; margin: 0.65rem 0 1rem; font-size: clamp(1.45rem, 3vw, 2.3rem); line-height: 0.95; letter-spacing: -0.06em; }
+.leadflow-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem; }
+.leadflow-metrics i { padding: 0.6rem; border: 1px solid rgba(154, 209, 240, 0.18); border-radius: 6px; color: #89a5b6; font-size: 0.44rem; font-style: normal; }
+.leadflow-metrics em { display: block; margin-bottom: 0.25rem; color: #f1fbff; font-size: 0.85rem; font-style: normal; font-weight: 900; }
+.leadflow-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.45rem; margin-top: 1rem; }
+.leadflow-columns span { min-height: 112px; padding: 0.45rem; border: 1px solid rgba(154, 209, 240, 0.12); border-radius: 5px; color: #84a5ba; font-size: 0.43rem; }
+.leadflow-columns b { display: block; margin-bottom: 0.5rem; color: #bdd9e8; font-size: 0.44rem; }
+.leadflow-columns i { display: block; height: 22px; margin-top: 0.3rem; border-radius: 3px; background: rgba(83, 185, 244, 0.18); }
+.leadflow-columns span:nth-child(2) i { background: rgba(238, 180, 76, 0.19); }
+.leadflow-columns span:nth-child(3) i { background: rgba(147, 223, 115, 0.2); }
+.leadflow-visual-label {
+  position: absolute;
+  right: clamp(1.5rem, 4vw, 3rem);
+  bottom: clamp(1.5rem, 4vw, 3rem);
+  z-index: 2;
+  padding: 0.75rem 0.9rem;
+  background: #eaf5fc;
+  color: #07131f;
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+}
+.leadflow-visual-label em { color: #37779e; font-size: 0.55em; font-style: normal; letter-spacing: 0; }
+@media (max-width: 600px) {
+  .leadflow-window { transform: none; }
+  .leadflow-dashboard { min-height: 300px; }
+  .leadflow-content { padding: 1.1rem; }
+  .leadflow-dashboard aside { padding: 1rem 0.45rem; }
+  .leadflow-columns { gap: 0.3rem; }
+}
