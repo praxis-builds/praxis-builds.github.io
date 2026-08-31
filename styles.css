@@ -667,6 +667,35 @@ fieldset legend {
   border-bottom: 1px solid;
   display: inline-block;
 }
+.project-card + .project-card {
+  margin-top: 2rem;
+}
+.latitude-visual {
+  position: relative;
+  justify-items: start;
+  align-items: end;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background:
+    linear-gradient(180deg, rgba(18, 14, 11, 0.04) 25%, rgba(18, 14, 11, 0.76) 100%),
+    url("https://sidhu-builds.github.io/latitude-kitchen-demo/assets/images/latitude-group-patio.jpg")
+      center / cover no-repeat;
+}
+.latitude-visual-label {
+  position: relative;
+  z-index: 1;
+  color: #fff8ec;
+  font-size: clamp(1.5rem, 3.2vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.88;
+}
+.latitude-visual-label em {
+  display: inline-block;
+  margin-top: 0.65rem;
+  font: italic 0.8rem Georgia, serif;
+  letter-spacing: 0.04em;
+}
+
 footer {
   padding: 2rem 5vw;
   display: flex;
