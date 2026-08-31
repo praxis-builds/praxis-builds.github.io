@@ -672,28 +672,128 @@ fieldset legend {
 }
 .latitude-visual {
   position: relative;
-  justify-items: start;
-  align-items: end;
+  display: grid;
+  place-items: center;
   padding: clamp(1.5rem, 4vw, 3rem);
   background:
-    linear-gradient(180deg, rgba(18, 14, 11, 0.04) 25%, rgba(18, 14, 11, 0.76) 100%),
-    url("https://sidhu-builds.github.io/latitude-kitchen-demo/assets/images/latitude-group-patio.jpg")
-      center / cover no-repeat;
+    radial-gradient(circle at 18% 18%, rgba(250, 200, 139, 0.55), transparent 32%),
+    linear-gradient(145deg, #b85f42 0%, #73352d 100%);
+}
+.latitude-browser {
+  width: min(90%, 520px);
+  min-height: 390px;
+  overflow: hidden;
+  border: 8px solid #2b211d;
+  border-radius: 16px;
+  background: #f4ead8;
+  box-shadow: 0 34px 70px rgba(35, 15, 12, 0.42);
+  transform: rotate(-2deg);
+}
+.latitude-browser-bar {
+  min-height: 38px;
+  padding: 0 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #2b211d;
+}
+.latitude-browser-bar i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ca7757;
+}
+.latitude-browser-bar span {
+  margin-left: auto;
+  color: #cbbda9;
+  font-size: 0.48rem;
+  letter-spacing: 0.15em;
+}
+.latitude-browser-body {
+  min-height: 352px;
+  padding: clamp(2rem, 4vw, 3.2rem);
+  color: #28211d;
+}
+.latitude-browser-body small {
+  display: block;
+  color: #8a4938;
+  font-size: 0.5rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+.latitude-browser-body > b {
+  display: block;
+  margin: 1.2rem 0 1.6rem;
+  font-size: clamp(1.7rem, 3.4vw, 3rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+.latitude-browser-body > b em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.latitude-cuisines {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+.latitude-cuisines span {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid #b7a793;
+  border-radius: 999px;
+  font-size: 0.5rem;
+  font-weight: 800;
+}
+.latitude-plates {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+.latitude-plates i {
+  width: 78px;
+  aspect-ratio: 1;
+  border: 7px solid #fffaf0;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 15px #d9a13f, 0 8px 18px rgba(70, 45, 30, 0.14);
+}
+.latitude-plates i:nth-child(2) {
+  box-shadow: inset 0 0 0 15px #75814a, 0 8px 18px rgba(70, 45, 30, 0.14);
+}
+.latitude-plates i:nth-child(3) {
+  box-shadow: inset 0 0 0 15px #b64d38, 0 8px 18px rgba(70, 45, 30, 0.14);
 }
 .latitude-visual-label {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  left: clamp(1.5rem, 4vw, 3rem);
+  bottom: clamp(1.5rem, 4vw, 3rem);
+  z-index: 2;
+  padding: 0.75rem 0.9rem;
+  background: #2b211d;
   color: #fff8ec;
-  font-size: clamp(1.5rem, 3.2vw, 3rem);
+  font-size: clamp(1rem, 2vw, 1.45rem);
   font-weight: 800;
-  letter-spacing: -0.05em;
-  line-height: 0.88;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
 }
 .latitude-visual-label em {
   display: inline-block;
-  margin-top: 0.65rem;
-  font: italic 0.8rem Georgia, serif;
+  margin-top: 0.5rem;
+  color: #d7c6ae;
+  font: italic 0.68rem Georgia, serif;
   letter-spacing: 0.04em;
+}
+@media (max-width: 600px) {
+  .latitude-browser {
+    min-height: 330px;
+  }
+  .latitude-browser-body {
+    min-height: 292px;
+    padding: 2rem 1.5rem;
+  }
+  .latitude-plates i {
+    width: 58px;
+    border-width: 5px;
+  }
 }
 
 footer {
