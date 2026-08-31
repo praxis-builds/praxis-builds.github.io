@@ -1,6 +1,6 @@
-# Sidhu Builds
+# Praxis Builds
 
-Static business website and portfolio for Sidhu Builds, designed for deployment at `https://sidhu-builds.github.io/` through GitHub Pages.
+Static business website and portfolio for Praxis Builds, designed for deployment at `https://sidhu-builds.github.io/` through GitHub Pages.
 
 ## What is included
 
@@ -8,7 +8,7 @@ Static business website and portfolio for Sidhu Builds, designed for deployment 
 - The **Minimal** case study with live-project and repository links
 - An accessible, keyboard-friendly interactive project process
 - A responsive project inquiry form with client-side validation
-- Honest fallback contact through the public Sidhu Builds GitHub profile
+- Honest fallback contact through the public Praxis Builds GitHub profile
 - No external packages, frameworks, fonts, images, analytics, or trackers
 
 ## Local preview
