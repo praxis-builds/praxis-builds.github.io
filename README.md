@@ -1,6 +1,6 @@
 # Praxis Builds
 
-Static business website and portfolio for Praxis Builds, designed for deployment at `https://sidhu-builds.github.io/` through GitHub Pages.
+Static business website and portfolio for Praxis Builds, designed for deployment at `https://praxis-builds.github.io/` through GitHub Pages.
 
 ## What is included
 
@@ -23,7 +23,7 @@ Then visit `http://localhost:8000`.
 
 ## GitHub Pages deployment
 
-Place these files at the root of the `sidhu-builds/sidhu-builds.github.io` repository and publish from the `main` branch root in **Settings → Pages**.
+Place these files at the root of the `sidhu-builds/praxis-builds.github.io` repository and publish from the `main` branch root in **Settings → Pages**.
 
 ## Before enabling direct inquiries
 
