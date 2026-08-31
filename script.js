@@ -273,13 +273,21 @@
 
       if (!response.ok) {
         const serverErrors = applyServerErrors(payload);
-        const details = serverErrors.length
-          ? ` Formspree reported: ${serverErrors.join(" ")}`
-          : "";
-        setStatus(
-          `We could not send your project details. Your entries are still here. Please try again or use the Email, Call, or Text options.${details}`,
-          "is-error",
-        );
+
+        let message =
+          "We could not send your project details. Your entries are still here. Please try again or use the Email, Call, or Text options.";
+
+        if (response.status === 403) {
+          message =
+            "Formspree blocked this submission. Please use the live Praxis Builds website rather than a local preview, then try again.";
+        } else if (response.status === 429) {
+          message =
+            "Formspree is temporarily limiting submissions. Your entries are still here—please try again in a few minutes.";
+        } else if (serverErrors.length) {
+          message += ` Formspree reported: ${serverErrors.join(" ")}`;
+        }
+
+        setStatus(message, "is-error");
         focusStatus();
         return;
       }
