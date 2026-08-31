@@ -283,8 +283,13 @@
         } else if (response.status === 429) {
           message =
             "Formspree is temporarily limiting submissions. Your entries are still here—please try again in a few minutes.";
+        } else if (response.status === 422) {
+          message =
+            "Formspree needs a verified email action before it can accept submissions. Please check the Email action in Formspree.";
         } else if (serverErrors.length) {
           message += ` Formspree reported: ${serverErrors.join(" ")}`;
+        } else {
+          message += ` Reference code: ${response.status}.`;
         }
 
         setStatus(message, "is-error");
