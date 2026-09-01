@@ -75,3 +75,10 @@ The production website is published from the root of the `main` branch with GitH
 ---
 
 **Praxis Builds** — useful digital work, built to be finished.
+
+## License and permitted use
+
+This repository is publicly viewable as a Praxis Builds portfolio demonstration, but it is **not open-source software**. The code and original design are provided for review only and may not be copied, modified, redistributed, deployed, sold, or used to create derivative work without written permission.
+
+See the [LICENSE](LICENSE) file for the complete notice. Third-party assets remain subject to their respective licenses.
+
